@@ -3,49 +3,66 @@ import LanguageSelector from "./components/LanguageSelector";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
-import { Heart, Search, ShoppingCart } from "lucide-react";
-import { Input } from "@/components/ui/input"
+import { Heart, ShoppingCart } from "lucide-react";
+import MobileNavbar from "./components/MobileNavbar";
+import SearchInput from "./components/SearchInput";
 
 const Header = () => {
   return (
-    <header>
-      <div className="bg-black text-white mb-12">
+    <header className="border border-b pb-5">
+      <div className="bg-black text-white mb-5 lg:mb-12">
         <div className="py-4 text-sm wrapper flex">
-          <div className="w-2/12"></div>
-          <div className="w-8/12 text-center">
+          <div className="main-menu w-2/12 hidden md:block"></div>
+          <div className="w-full md:w-8/12 text-center">
             <p>
               Summer Sale For All Swim Suits And Free Express Delivery - OFF
               50%!
             </p>
           </div>
-          <div className="w-2/12 text-end">
+          <div className="w-2/12 text-end hidden md:block">
             <LanguageSelector />
           </div>
         </div>
       </div>
-      <div className="wrapper flex items-center">
-        <div className="w-3/12">
+      <div className="wrapper flex md:items-center justify-between md:justify-between">
+        <div className="lg:hidden w-2/12">
+          <MobileNavbar />
+        </div>
+        <div className="col logo w-full text-center md:w-auto">
           <Link href="/">
-            <Image src="/images/logo.png" alt="logo" width="118" height="24" />
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width="118"
+              height="24"
+              className="mx-auto"
+            />
           </Link>
         </div>
-        <div className="w-5/12">
+
+        {/* Menu Section */}
+        <div className="col menu hidden lg:block">
           <Navbar />
         </div>
-        <div className="w-4/12">
-          <div className="flex space-x-5 items-center justify-end">
-            <div className="relative me-5">
 
-          <Input placeholder="What are you looking for?" className="bg-[#F5F5F5] rounded-sm w-[253px] py-5 text-xs"/>
-          <span><Search className="absolute top-2 right-3" /></span>
-            </div>
-            <Link href="/" >
-              <Heart size={32}/>
+        <div className="col action hidden lg:block">
+          <div className="flex space-x-5 items-center justify-end">
+            <SearchInput />
+            <Link href="/">
+              <Heart size={32} />
             </Link>
             <Link href="/">
-              <ShoppingCart size={32}/>
+              <ShoppingCart size={32} />
             </Link>
           </div>
+        </div>
+        <div className="lg:hidden flex items-center space-x-3 w-2/12 justify-end">
+          <Link href="/">
+            <Heart size={24} />
+          </Link>
+          <Link href="/">
+            <ShoppingCart size={24} />
+          </Link>
         </div>
       </div>
     </header>
