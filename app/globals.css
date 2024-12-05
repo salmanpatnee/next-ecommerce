@@ -87,4 +87,10 @@ body {
   .wrapper {
     @apply px-4 max-w-[1200px] mx-auto;
   }
+  .sub-title {
+    @apply font-semibold text-primary text-base;
+  }
+  .title {
+    @apply font-secondary font-semibold text-4xl;
+  }
 }

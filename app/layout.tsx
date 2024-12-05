@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '600'],
+  weight: ['400', '500', '600'],
   display: 'swap',
 });
 
