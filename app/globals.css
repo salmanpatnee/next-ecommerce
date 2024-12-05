@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #DB4444;
-  --primary-hover: #E07575;
+  --primary: #db4444;
+  --primary-hover: #e07575;
   --secondary: #000000;
 }
 
@@ -12,6 +12,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: gray !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+  border: 2px solid white;
+  opacity: 1 !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -92,5 +105,13 @@ body {
   }
   .title {
     @apply font-secondary font-semibold text-4xl;
+  }
+
+  .button {
+    @apply bg-primary hover:bg-black text-white text-base font-medium text-center rounded py-4 px-12 transition-all;
+  }
+
+  .button-alt {
+    @apply bg-[#00FF66] hover:bg-white hover:text-black text-white text-base font-medium text-center rounded py-4 px-12 transition-all;
   }
 }

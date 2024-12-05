@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "HAVIT HV-G92 Gamepad",
+      "imageUrl": "/images/products/gamepad.png",
+      "price": 160,
+      "salePrice": 120,
+      "discountPercentage": 40,
+      "rating": 5,
+      "reviewsCount": 120
+    },
+    {
+      "id": 2,
+      "title": "AK-900 Wired Keyboard",
+      "imageUrl": "/images/products/keyboard.png",
+      "price": 1160,
+      "salePrice": 960,
+      "discountPercentage": 35,
+      "rating": 4,
+      "reviewsCount": 80
+    },
+    {
+      "id": 3,
+      "title": "IPS LCD Gaming Monitor",
+      "imageUrl": "/images/products/lcd.png",
+      "price": 400,
+      "salePrice": 370,
+      "discountPercentage": 30,
+      "rating": 5,
+      "reviewsCount": 200
+    },
+    {
+      "id": 4,
+      "title": "S-Series Comfort Chair ",
+      "imageUrl": "/images/products/chair.png",
+      "price": 400,
+      "salePrice": 375,
+      "discountPercentage": 25,
+      "rating":4,
+      "reviewsCount": 300
+    },
+    {
+      "id": 5,
+      "title": "The north coat",
+      "imageUrl": "/images/products/coat.png",
+      "price": 360,
+      "salePrice": 260,
+      "discountPercentage": 10,
+      "rating": 4,
+      "reviewsCount": 150
+    }
+  ]
+  

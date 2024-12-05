@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "title": "Phones",
+      "imageUrl": "/images/categories/cellPhone.png"
+    },
+    {
+      "id": 2,
+      "title": "Computers",
+      "imageUrl": "/images/categories/computer.png"
+    },
+    {
+      "id": 3,
+      "title": "SmartWatch",
+      "imageUrl": "/images/categories/smartWatch.png"
+    },
+    {
+      "id": 4,
+      "title": "Camera",
+      "imageUrl": "/images/categories/camera.png"
+    },
+    {
+      "id": 5,
+      "title": "HeadPhones",
+      "imageUrl": "/images/categories/headphone.png"
+    }, 
+    {
+        "id": 6,
+        "title": "Gaming",
+        "imageUrl": "/images/categories/gamepad.png"
+      }
+  ]
+  

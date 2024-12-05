@@ -1,0 +1,38 @@
+[
+    {
+      "id": 2,
+      "title": "Small BookSelf",
+      "imageUrl": "/images/products/shelf.png",
+      "price": 1160,
+      "rating": 4,
+      "reviewsCount": 80
+    },
+    {
+      "id": 3,
+      "title": "RGB liquid CPU Cooler",
+      "imageUrl": "/images/products/gammaxx.png",
+      "price": 400,
+      "salePrice": 370,
+      "rating": 5,
+      "reviewsCount": 200
+    },
+    {
+      "id": 4,
+      "title": "Gucci duffle bag ",
+      "imageUrl": "/images/products/bag.png",
+      "price": 1160,
+      "salePrice": 960,
+      "rating":4,
+      "reviewsCount": 300
+    },
+    {
+      "id": 5,
+      "title": "The north coat",
+      "imageUrl": "/images/products/coat.png",
+      "price": 360,
+      "salePrice": 260,
+      "rating": 4,
+      "reviewsCount": 150
+    }
+  ]
+  
