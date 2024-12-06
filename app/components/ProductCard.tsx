@@ -6,6 +6,7 @@ import React from "react";
 type Product = {
   id: number;
   title: string;
+  slug: string;
   imageUrl: string;
   price?: number | undefined;
   salePrice: number;
@@ -22,16 +23,18 @@ const ProductCard = ({ product }: Props) => {
   return (
     <div className="min-w-[270px]">
       <div className="relative group">
-        <div className="bg-[#F5F5F5] flex items-center justify-center px-10 py-10 mb-4 rounded min-h-[250px]">
-          <div className="relative w-[170px] h-[150px]">
-            <Image
-              src={product.imageUrl}
-              alt={product.title}
-              fill
-              className="object-contain"
-            />
+        <Link href={`/products/${product.slug}`}>
+          <div className="bg-[#F5F5F5] flex items-center justify-center px-10 py-10 mb-4 rounded min-h-[250px]">
+            <div className="relative w-[170px] h-[150px]">
+              <Image
+                src={product.imageUrl}
+                alt={product.title}
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
-        </div>
+        </Link>
         {product.discountPercentage && (
           <span className="bg-primary rounded py-1 px-3 text-white text-xs absolute top-3 left-3">
             -{product.discountPercentage}%
@@ -52,9 +55,11 @@ const ProductCard = ({ product }: Props) => {
       </div>
 
       <div className="bg-white">
-        <h4 className="text-base font-medium text-black mb-2">
-          {product.title}
-        </h4>
+        <Link href={`/products/${product.slug}`}>
+          <h4 className="text-base font-medium text-black mb-2">
+            {product.title}
+          </h4>
+        </Link>
         <p className="flex items-center gap-3 text-base font-medium mb-3">
           {product.salePrice && (
             <ins className="text-primary no-underline">

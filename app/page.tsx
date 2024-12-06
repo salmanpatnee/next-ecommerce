@@ -29,11 +29,11 @@ export default function Home() {
     <>
       <section className="wrapper">
         <div className="flex flex-wrap">
-          <div className="w-full md:w-2/12 border-e py-10 pe-4 hidden lg:block">
+          <div className="w-full md:w-2/12 border-e pt-10 pe-4 hidden lg:block">
             <CategoryMenu />
           </div>
 
-          <div className="w-full lg:w-10/12 lg:py-10 py-5 lg:ps-10">
+          <div className="w-full lg:w-10/12 lg:pt-10 pt-5 lg:ps-10">
             <Hero />
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function Home() {
 
       <section className="wrapper bg-black mb-12">
         <div className="py-16 px-12 flex items-center justify-between">
-          <div className="lg:w-5/12 w-full text-white text-center">
+          <div className="lg:w-5/12 w-full text-white lg:text-start text-center">
             <span className="text-[#00FF66] font-semibold text-base mb-8 block">
               Categories
             </span>
@@ -212,7 +212,7 @@ export default function Home() {
               alt="timer"
               width={320}
               height={62}
-              className="mb-14 mx-auto"
+              className="mb-14 lg:ms-0 mx-auto"
             />
             <Link href="" className="button-alt">
               Buy Now
@@ -289,6 +289,51 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="wrapper lg:mb-36 mb-10">
+        <div className="flex flex-wrap gap-20">
+          <div className="flex-1 lg:min-w-[250px]  text-center p-4">
+            <Image
+              src="/images/delivery.png"
+              alt="delivery"
+              width={80}
+              height={80}
+              className="mx-auto mb-6"
+            />
+            <h4 className="text-xl font-semibold uppercase mb-2">
+              FREE AND FAST DELIVERY
+            </h4>
+            <p className="text-sm">Free delivery for all orders over $140</p>
+          </div>
+          <div className="flex-1 lg:min-w-[250px]  text-center p-4">
+            <Image
+              src="/images/customer-service.png"
+              alt="customer"
+              width={80}
+              height={80}
+              className="mx-auto mb-6"
+            />
+            <h4 className="text-xl font-semibold uppercase mb-2">
+            24/7 CUSTOMER SERVICE
+            </h4>
+            <p className="text-sm">Friendly 24/7 customer support</p>
+          </div>
+          <div className="flex-1 lg:min-w-[250px]  text-center p-4">
+            <Image
+              src="/images/money-back.png"
+              alt="money-back"
+              width={80}
+              height={80}
+              className="mx-auto mb-6"
+            />
+            <h4 className="text-xl font-semibold uppercase mb-2">
+            MONEY BACK GUARANTEE
+            </h4>
+            <p className="text-sm">We return money within 30 days</p>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }

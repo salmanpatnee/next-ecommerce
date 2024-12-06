@@ -85,6 +85,14 @@ const CategoryMenu = () => {
           <Link href="/">Headphones</Link>
         </AccordionContent>
       </AccordionItem>
+      <AccordionItem value="item-8" className="text-base border-0">
+        <AccordionTrigger className="p-0 hover:text-primary">
+          Gaming
+        </AccordionTrigger>
+        <AccordionContent className="ms-3 mt-3">
+          <Link href="/">PS5</Link>
+        </AccordionContent>
+      </AccordionItem>
     </Accordion>
   );
 };
