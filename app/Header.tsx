@@ -48,11 +48,17 @@ const Header = () => {
         <div className="col action hidden lg:block">
           <div className="flex space-x-5 items-center justify-end">
             <SearchInput />
-            <Link href="/">
-              <Heart size={32} />
+            <Link href="/wishlist" className="group">
+              <Heart
+                size={32}
+                className="stroke-current text-black group-hover:fill-primary transition-colors group-hover:stroke-primary"
+              />
             </Link>
-            <Link href="/">
-              <ShoppingCart size={32} />
+            <Link href="/cart" className="group">
+              <ShoppingCart
+                size={32}
+                className="stroke-current text-black group-hover:fill-primary transition-colors group-hover:stroke-primary"
+              />
             </Link>
           </div>
         </div>
