@@ -35,7 +35,7 @@ const ProductPage = ({ params: { slug } }: Props) => {
   };
 
   return (
-    <article className="wrapper">
+    <article className={`wrapper product-${slug}`}>
       <nav className="flex items-center space-x-2 text-gray-400 text-sm lg:py-20 py-10">
         <a href="#" className="hover:text-primary">
           Home

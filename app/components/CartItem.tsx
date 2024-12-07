@@ -1,4 +1,4 @@
-import { Eye, Heart, Star, Trash, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
