@@ -16,7 +16,7 @@ type Product = {
 };
 
 interface Props {
-  product: Product;
+  product: Object;
 }
 
 const ProductCard = ({ product }: Props) => {
