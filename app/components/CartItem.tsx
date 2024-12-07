@@ -4,15 +4,15 @@ import Link from "next/link";
 import React from "react";
 
 type Product = {
-  id: number;
-  title: string;
+  id?: number;
+  title?: string;
   slug?: string;
-  imageUrl: string;
+  imageUrl?: string;
   price?: number | undefined;
-  salePrice: number;
+  salePrice?: number;
   discountPercentage?: number | undefined;
-  rating: number; // rating out of 6
-  reviewsCount: number;
+  rating?: number; // rating out of 6
+  reviewsCount?: number;
 };
 
 interface Props {
@@ -43,16 +43,16 @@ const CartItem = ({ product }: Props) => {
 
         <div className="absolute top-3 right-3 flex flex-col gap-2">
           <button className="bg-white hover:bg-primary rounded-full p-2 transition-colors group">
-            <Trash2 size={20} strokeWidth={1.5} className="stroke-current text-black group-hover:fill-primary transition-colors group-hover:stroke-white" />
+            <Trash2 size={20} strokeWid?th={1.5} className="stroke-current text-black group-hover:fill-primary transition-colors group-hover:stroke-white" />
           </button>
-        </div>
+ ?       </div>
         <button className="bg-black text-center font-medium text-base w-full py-2 absolute bottom-0 text-white rounded-b hover:bg-primary  group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all">
-          <Link href="">Add To Cart</Link>
+    ?      <Link href="">Add To Cart</Link>
         </button>
-      </div>
+     ? </div>
 
-      <div className="bg-white">
-        <Link href={`/products/${product.slug}`}>
+  ?    <div className="bg-white">
+        ?<Link href={`/products/${product.slug}`}>
           <h4 className="text-base font-medium text-black mb-2">
             {product.title}
           </h4>

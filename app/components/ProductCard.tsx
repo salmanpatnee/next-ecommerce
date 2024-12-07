@@ -4,15 +4,15 @@ import Link from "next/link";
 import React from "react";
 
 type Product = {
-  id: number;
-  title: string;
+  id?: number;
+  title?: string;
   slug?: string;
-  imageUrl: string;
+  imageUrl?: string;
   price?: number | undefined;
-  salePrice: number;
+  salePrice?: number;
   discountPercentage?: number | undefined;
-  rating: number; // rating out of 6
-  reviewsCount: number;
+  rating?: number; // rating out of 6
+  reviewsCount?: number;
 };
 
 interface Props {
