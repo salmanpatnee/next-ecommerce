@@ -187,7 +187,7 @@ export default function Home() {
               },
             }}
           >
-            {bestSelling.map((product) => {
+            {products.map((product) => {
               return (
                 <SwiperSlide key={product.id}>
                   <ProductCard key={product.id} product={product} />
