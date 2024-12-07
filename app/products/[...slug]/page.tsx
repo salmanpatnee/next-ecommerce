@@ -17,7 +17,7 @@ interface Props {
 
 const ProductPage = ({ params: { slug } }: Props) => {
   const [quantity, setQuantity] = useState(1);
-  const [thumbsSwiper, setThumbsSwiper] = useState<Swiper | null>(null); // Corrected type
+  const [thumbsSwiper] = useState<Swiper | null>(null); // Corrected type
 
   const productImages = [
     "/images/ps5-controller.png",
