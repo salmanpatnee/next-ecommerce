@@ -6,7 +6,7 @@ import React from "react";
 type Product = {
   id: number;
   title: string;
-  slug: string;
+  slug?: string;
   imageUrl: string;
   price?: number | undefined;
   salePrice: number;
