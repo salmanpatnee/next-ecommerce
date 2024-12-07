@@ -4,19 +4,19 @@ import Link from "next/link";
 import React from "react";
 
 type Product = {
-  id?: number;
-  title?: string;
-  slug?: string;
-  imageUrl?: string;
-  price?: number | undefined;
+  id: number;
+  title: string;
+  slug: string; // Mark as required
+  imageUrl: string;
+  price: number;
   salePrice?: number;
-  discountPercentage?: number | undefined;
-  rating?: number; // rating out of 6
-  reviewsCount?: number;
+  discountPercentage?: number;
+  rating: number; // rating out of 6
+  reviewsCount: number;
 };
 
 interface Props {
-  product: Object;
+  product: Product; // Ensure required properties align
 }
 
 const ProductCard = ({ product }: Props) => {
